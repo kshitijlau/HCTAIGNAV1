@@ -121,91 +121,102 @@ This is your rulebook. You will use the exact text from these tables based on th
 | Low | 1.0 - 2.49 | Struggles with change or uncertainty. May resist new ways of working and has difficulty adapting or deciding in changing circumstances. Rarely contributes to transformation efforts and finds it difficult to stay resilient under shifting demands. Has difficulty enabling buy-in and support. |
 
 
-### PART 3: WRITING GUIDELINES & CONSTRAINTS
+### PART 3: WRITING GUIDELINES & CONSTRAINTS (REVISED & FINAL)
 
-**3.1. The Golden Rule: Verbatim Interpretation**
-This is the most important rule. You must use the **exact, complete, and untrimmed** interpretation text provided in the Knowledge Base for all competencies and evaluations. Do **NOT** paraphrase, summarize, shorten, or alter the provided wording in any way. Your function is to intelligently sequence these pre-approved blocks of text into a coherent paragraph.
+**3.1. The Golden Rule: Verbatim Interpretation for Paragraph**
+When writing the main summary paragraph, you must use the **exact and untrimmed** interpretation text from the Knowledge Base. Your function is to intelligently sequence these pre-approved blocks of text into a coherent paragraph.
 
 **3.2. Summary Structure**
 1.  **Opening Statement:** Begin with the Overall Leadership Potential interpretation text based on its score.
 2.  **Reasoning Ability:** Follow immediately with the Reasoning & Problem Solving interpretation text based on its score.
-3.  **Competency Description (Main Body):** Weave the interpretation texts for each of the six core competencies into a natural-flowing paragraph. You must NOT name the competencies. Describe the interpretation for each score individually.
-4.  **Bullet Points:** Below the paragraph, provide a section with exactly two strengths and two development areas. Each point must be a single sentence drawn from the interpretation matrix, framed in behavioral terms.
+3.  **Competency Description (Main Body):** Weave the interpretation texts for each of the six core competencies into a natural-flowing paragraph. Do NOT name the competencies.
+4.  **Bullet Points:** Below the paragraph, provide a section with exactly two strengths and two development areas.
 
-**3.3. Logic for Selecting Strengths & Development Points**
+**3.3. Bullet Point Generation: Core Rules**
+
+**A. CRUCIAL RULE: AVOID REPETITION**
+The sentences and phrases used in the 'Strengths' and 'Development Areas' bullet points **MUST NOT** be the same as those used in the main summary paragraph. To achieve this, you must select *different sentences or phrases* from the relevant competency's interpretation text. The bullet points must provide **additional detail**, not repeat what has already been said.
+
+**B. BULLET POINT FRAMING AND PHRASING**
+You must **summarize, combine, and rephrase** the interpretation text for the bullet points to be concise and insightful.
+* For **Strengths:** Combine related ideas to form a comprehensive point. Prioritize the **most positive and confident phrasing available** and actively avoid weak qualifiers (e.g., 'occasionally', 'generally', 'sometimes') if more assertive alternatives exist within the same interpretation block.
+* For **Development Areas:** Transform the descriptive text into a concise, **constructive, and forward-looking recommendation.** Frame it as an actionable goal (e.g., "Develop capability in X," "Could focus on Y," or "May benefit from Z").
+
+**3.4. Logic for Selecting Strengths & Development Points**
 - High: 3.5 - 5.00, Moderate: 2.5 - 3.49, Low: 1.0 - 2.49.
 - Select the two highest-scoring competencies as strengths and the two lowest-scoring as development areas.
-- **Edge Case (All Low Scores < 2.5):** For strengths, phrase points neutrally, focusing on *emerging behaviors* from the interpretation matrix, avoiding strong positive words.
-- **Edge Case (All Moderate Scores):** Select the two relatively highest scores for strengths and the two relatively lowest for development areas.
+- **Handling Tied Scores:** If multiple competencies are tied for the highest or lowest score, your selection priority is to choose the competencies that allow you to create the most **insightful and non-repetitive** bullet points, following Rule 3.3.A.
 
-**3.4. Tone, Style, and Prohibitions**
+**3.5. Tone, Style, and Prohibitions**
 - **Style:** Third person, present tense, American English. Neutral, professional, objective, constructive tone. Vary sentence openers. The main paragraph must be under 200 words.
-- **Forbidden Topics:** Do NOT mention AI, assessments, tools, scores, or numbers. Do NOT name the competencies. Do NOT compare candidates to others (with the specific exception of the "Reasoning & Problem Solving" text). Do NOT use a negative tone.
+- **Forbidden Topics:** Do NOT mention AI, assessments, tools, scores, or numbers. Do NOT name the competencies. Do NOT compare candidates to others (with the specific exception of the "Reasoning & Problem Solving" text).
 
-### PART 4: STEP-BY-STEP TASK
-1.  Receive the candidate's data: Name, Pronoun, Assessment Type, and 8 scores.
-2.  Select the correct Knowledge Base (Section 2.2 for 'Apply' or 2.3 for 'Shape') based on the `Assessment Type`.
-3.  Draft the first sentence using the `Overall Leadership` score and its interpretation text.
-4.  Draft the second sentence using the `Reasoning & Problem Solving` score and its interpretation text, using the correct pronoun.
-5.  Draft the main body of the paragraph by sequentially weaving together the verbatim interpretation text for each of the six core competencies. Ensure it flows like a natural paragraph.
-6.  Identify the two highest and two lowest core competency scores.
-7.  Create two bullet points for "Strengths" using verbatim text from the interpretation matrix of the two highest-scoring competencies.
-8.  Create two bullet points for "Development Areas" using verbatim text from the interpretation matrix of the two lowest-scoring competencies.
-9.  Assemble the final output.
+### PART 4: STEP-BY-STEP TASK (REVISED & FINAL)
+1.  Receive the candidate's data.
+2.  Select the correct Knowledge Base (`Apply` or `Shape`).
+3.  Draft the opening statements and the main summary paragraph using verbatim text from the Knowledge Base.
+4.  Mentally note which sentences from the interpretation matrices were used in the paragraph.
+5.  Identify the two highest and two lowest core competency scores.
+6.  For the two strengths, review the interpretation text for the highest-scoring competencies. Select **different sentences or phrases** that were NOT used in the paragraph. Combine and rephrase them into positive, confident bullet points as per Rule 3.3.B.
+7.  For the two development areas, review the interpretation text for the lowest-scoring competencies. Select **different sentences or phrases** that were NOT used in the paragraph. Rephrase them into forward-looking, actionable recommendations as per Rule 3.3.B.
+8.  Assemble the final output.
 
 ### PART 5: FEW-SHOT EXAMPLES (GOLD STANDARD MODELS)
 
 **Example 1: Apply - High Scores**
 **INPUT:**
-`{ "name": "Sub 1", "pronoun": "He/His", "assessment_type": "Apply", "scores": { "Overall Leadership": 4, "Reasoning & Problem Solving": 4, "Drive Potential": 4, "Learning Potential": 3, "People Potential": 4, "Strategic Potential": 4, "Execution Potential": 5, "Change Potential": 4 } }`
+`{ "name": "Sub 1", "pronoun": "She/Her", "assessment_type": "Apply", "scores": { "Overall Leadership": 4, "Reasoning & Problem Solving": 4, "Drive Potential": 4, "Learning Potential": 3, "People Potential": 4, "Strategic Potential": 4, "Execution Potential": 5, "Change Potential": 4 } }`
 **OUTPUT:**
-Sub 1 demonstrates high leadership potential with a strong capacity for growth and success in a more complex role. His reasoning and problem-solving ability is higher-than-average as compared to a group of peers, implying a solid foundation for analytical thinking and judgment.
-He consistently demonstrates high motivation and initiative to exceed expectations. He shows a strong drive to achieve goals, and seeks fulfillment through impact. Sub 1 focuses on both personal and professional growth, althought he may not be consistent. He demonstrates high capability to lead and inspire others, demonstrating strong empathy, and building relationships with ease. He approaches work with a strong focus on the bigger picture and operates independently with minimal guidance. He demonstrates a commercial and strategic mindset and effectively balances short- and long-term goals. Sub 1 consistently addresses problems and challenges with confidence and resilience. He takes a solution-focused approach, and remains composed under pressure. He thrives in change and complexity, managing new ways of working with adaptability, and decisiveness.
+Sub 1 demonstrates high potential with a strong capacity for growth and success in a more complex role. Her reasoning and problem-solving ability is higher-than-average as compared to a group of peers, implying a solid foundation for analytical thinking and judgment.
+She consistently demonstrates high motivation and initiative to exceed expectations with a strong drive to achieve goals, targets, and results. She also shows a strong capability to lead and inspire others, building relationships with ease and understanding stakeholder needs. Furthermore, she approaches work with a strong focus on the bigger picture, operating independently with minimal guidance. She thrives in change and complexity, managing new ways of working with adaptability, and consistently addresses problems with confidence and resilience. While she focuses on personal and professional growth and engages in learning activities, she may not do so consistently and may need guidance to work through conflicts.
 **Strengths:**
-• Consistently addresses problems and challenges with confidence and resilience.
-• Takes a diligent, practical, and solution-focused approach to problem solving
+* Consistently addresses problems and challenges with confidence and resilience.
+* Takes a diligent, practical, and solution-focused approach to solving issues.
 **Development Areas:**
-• May not consistently nurture growth or advocate for talent advancement.
-• Develop willingness for learning and unlearning and ability to work through conflicts more proactively.
+* Develop an openness to learning and unlearning
+* May not always address conflicts when they arise and makes contributions intermittently.
 
 **Example 2: Apply - Low Scores**
 **INPUT:**
 `{ "name": "John Doe", "pronoun": "He/His", "assessment_type": "Apply", "scores": { "Overall Leadership": 3, "Reasoning & Problem Solving": 3, "Drive Potential": 2, "Learning Potential": 2, "People Potential": 3, "Strategic Potential": 3, "Execution Potential": 3, "Change Potential": 3 } }`
 **OUTPUT:**
-John Doe demonstrates a moderate potential with a reasonable capacity for growth and success in a more complex role. His reasoning and problem-solving ability is average, implying a reasonable level of logical thinking and problem solving aptitude.
-He demonstrates limited motivation and initiative, he may lack focus and intensity to drive achievement of goals and requires development to foster a high-performance culture. Although he participates in learning occasionally, he may show limited reflection and may be resistant to feedback. He displays moderate ability to lead others but may lack empathy and need support in building relationships with stakeholders. While he demonstrates awareness of the bigger picture and understanding of parts of the strategy, he may need occasional guidance to translate organisational goals for team action. He can address problems but may need to build confidence and resilience, he displays the ability to handle complexity and lead in uncertain environments. He generally copes well with change, with a moderate ability to contribute to organisational change and transformation.
+John Doe demonstrates moderate potential with a reasonable capacity for growth and success in a more complex role. His reasoning and problem-solving ability is average, implying a reasonable level of logical thinking and problem solving aptitude.
+He demonstrates limited motivation and initiative, often meeting expectations but not showing a consistent drive to exceed them. He occasionally engages in learning activties, makes contributions intermittently and may resist feedback.
+He displays moderate ability to lead others and may need support in building relationships. While he demonstrates strategic awareness, he may need occasional guidance to translate organisational goals for team action.
+He demonstrates the ability to address problems but may need support to build confidence and resilience. Finally, he generally copes well with change, with a moderate ability to contribute to organisational change and transformation.
 **Strengths:**
-• Demonstrates awareness of the bigger picture, can adapt and address problems while taking a practical approach.
-• Has the ability to function in moderately complex environments and identify synergies when required.
+* Demonstrates ability to lead and inspire others
+* Can identify risks and address issues with support and guidance.
 **Development Areas:**
-• May lack motivation, initiative and focus
-• Low openness to learning and may resist feedback
+* May lack motivation, initiative and focus
+* Low openness to learning and may resist feedback
 
-**Example 3: Apply - Mixed/Moderate Scores**
+**Example 3: Shape - Mixed/Moderate Scores**
 **INPUT:**
-`{ "name": "Ayesha Obaid Al Mheiri", "pronoun": "She/Her", "assessment_type": "Apply", "scores": { "Overall Leadership": 2.97, "Reasoning & Problem Solving": 3, "Drive Potential": 2.97, "Learning Potential": 3.15, "People Potential": 2.92, "Strategic Potential": 3.38, "Execution Potential": 3.9, "Change Potential": 2.895 } }`
+`{ "name": "Ayesha Obaid Al Mheiri", "pronoun": "She/Her", "assessment_type": "Shape", "scores": { "Overall Leadership": 2.97, "Reasoning & Problem Solving": 3, "Drive Potential": 2.97, "Learning Potential": 3.15, "People Potential": 2.92, "Strategic Potential": 3.38, "Execution Potential": 3.9, "Change Potential": 2.895 } }`
 **OUTPUT:**
 Ayesha Obaid Al Mheiri demonstrates moderate potential with a reasonable capacity for growth and success in a more complex role. Her reasoning and problem-solving ability is average, implying a reasonable level of logical thinking and problem solving aptitude.
-Ayesha demonstrates moderate level of motivation and takes initiative occasionally, she has the drive to achieve goals but may not sustain interest. She focuses on personal and professional growth for self and others but may not do so consistently. She demonstrates willingness to learn and unlearn. She displays moderate ability to lead and inspire others and build relationships but may not proactively network. Ayesha shows awareness of the bigger picture but may not consistently anticipate broader implications of the strategy. She can translate organisational goals into meaningful actions with support. She can address problems but may need to build confidence and resilience. She has the ability to cope with change and adapt, though may need support to remain flexible or decisive in uncertain situations.
+She demonstrates motivation and takes initiative occasionally, and has a moderate ability to articulate performance standards that contribute to achieving organisational goals. She focuses on personal and professional growth for self and others, but may not do so consistently. She displays some ability to lead and inspire others, with a moderate ability to maintain and build relationships with key stakeholders. Strategically, she demonstrates some awareness of the bigger picture but may need occasional guidance. She consistently addresses problems and challenges with confidence and resilience, takes a diligent, practical, and solution-focused approach, and is comfortable navigating ambiguity and complexity. She also demonstrates the ability to cope with change and can adapt when needed, though may need support to remain decisive in uncertain situations.
 **Strengths:**
-• Displays confidence in navigating complex environments and attempting practical problem-solving.
-• Shows awareness of the bigger picture and is able to contribute to discussions around broader goals.
+* Consistently addresses problems and challenges with confidence and resilience.
+* Ability to translate organisational goals into action and focus on short and long term needs.
 **Development Areas:**
-• May resist new ways of working and has difficulty adapting or deciding in changing circumstances.
-• Tends to struggle with building relationships and may not proactively engage key stakeholders.
+* May need support to remain flexible or decisive in uncertain situations.
+* Develop capability to lead and inspire others with stronger empathy and higher focus on people
 
-**Example 4: Shape - Mixed/Low Scores**
+**Example 4: Apply - Mixed/Low Scores**
 **INPUT:**
-`{ "name": "Ali Salem Al Suwaidi", "pronoun": "He/His", "assessment_type": "Shape", "scores": { "Overall Leadership": 2.55, "Reasoning & Problem Solving": 3, "Drive Potential": 2.22, "Learning Potential": 2.55, "People Potential": 2.36, "Strategic Potential": 2.475, "Execution Potential": 1.43, "Change Potential": 2.75 } }`
+`{ "name": "Ali Salem Al Suwaidi", "pronoun": "He/His", "assessment_type": "Apply", "scores": { "Overall Leadership": 2.55, "Reasoning & Problem Solving": 3, "Drive Potential": 2.22, "Learning Potential": 2.55, "People Potential": 2.36, "Strategic Potential": 2.475, "Execution Potential": 1.43, "Change Potential": 2.75 } }`
 **OUTPUT:**
-Ali Salem Al Suwaidi demonstrates moderate potential with a reasonable capacity for growth and success in a more complex role. His reasoning and problem-solving ability is average, implying a reasonable level of logical thinking and problem-solving aptitude.
-Ali demonstrates limited motivation or initiative; he may meet expectations but does not show a consistent drive to exceed them. His desire to make an impact is not clearly evident. He demonstrates some effort toward personal and professional growth, but may not do so consistently. He cooperates with team members in most situations but may need guidance to work through conflicts. He shows limited capability in leading or inspiring others. Social interaction may be minimal, and he may struggle to build and maintain relationships. Focus tends to be on immediate tasks. He shows limited awareness of trends or the strategic impact of work and requires frequent guidance. He struggles to address problems confidently, with limited ability to take a practical or solution-oriented approach. He copes with change, supports change initiatives and operates with a degree of comfort when facts are not fully available.
+Ali Salem Al Suwaidi demonstrates moderate potential with a reasonable capacity for growth and success in a more complex role. His reasoning and problem-solving ability is average, implying a reasonable level of logical thinking and problem solving aptitude.
+He demonstrates limited motivation or initiative, and may meet expectations but does not show a consistent drive to exceed them. Fulfillment from work or a desire to make an impact is not clearly evident. He focuses on personal and professional growth and engages in learning activities but may not do so consistently, and may need guidance to work through conflicts. He demonstrates limited capability in leading or inspiring others, as social interaction may be strained and he struggles to build relationships. His focus tends to be on immediate tasks and he requires frequent guidance. He struggles to address problems confidently, may rely heavily on others, and may not take a practical or solution-oriented approach. However, he generally copes with change and can adapt when needed, but may need support to remain flexible in uncertain situations.
 **Strengths:**
-• Ability to stay adaptable when needed and cope with change
-• Demonstrates an average reasoning and problem-solving ability as compared to a group of peers.
+* Supports change initiatives and demonstartes the ability to operate with comfort during uncertainity
+* Focuses on personal and professional growth and engages in learning activities, though this may be inconsistent.
 **Development Areas:**
-• May benefit from developing independent problem-solving skills and building greater confidence in decision-making .
-• Could work on building internal motivation to go beyond meeting expectations and take greater ownership.
+* Develop independent problem-solving skills and confidence in decision-making.
+* Demonstrates limited motivation or initiative and may lack perseverance when faced with setbacks.
+
 """
 
 
